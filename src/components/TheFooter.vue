@@ -34,4 +34,9 @@ async function toggleLocales() {
       <div i-carbon-logo-github />
     </a>
   </nav>
+  <nav flex="~ gap-4" mt-6 justify-center text-xl>
+    <RouterLink icon-btn to="/eslint" title="eslint">
+      <div i-carbon-ibm-watsonx-code-assistant-for-z-validation-assistant />
+    </RouterLink>
+  </nav>
 </template>
