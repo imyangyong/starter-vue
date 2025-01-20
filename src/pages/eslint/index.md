@@ -10,11 +10,22 @@ pnpm i -D eslint @antfu/eslint-config
 
 ## Usage
 
+1. create `eslint.config.mjs` in project root
+
 ```js
-// create eslint.config.mjs in project root
 import antfu from '@antfu/eslint-config'
 
 export default antfu()
+```
+
+2. add lint script to `package.json`
+
+```json
+{
+  "scripts": {
+    "lint": "eslint ."
+  }
+}
 ```
 
 Check out the [Antfu eslint config](https://github.com/antfu/eslint-config) for more details.
