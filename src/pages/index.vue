@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Button } from '~/components/ui/button'
+
 defineOptions({
   name: 'IndexPage',
 })
@@ -16,20 +18,6 @@ const { t } = useI18n()
 
 <template>
   <div>
-    <div text-4xl>
-      <div i-carbon-campsite inline-block />
-    </div>
-    <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
-        Vitesse
-      </a>
-    </p>
-    <p>
-      <em text-sm opacity-75>{{ t('intro.desc') }}</em>
-    </p>
-
-    <div py-4 />
-
     <TheInput
       v-model="name"
       :placeholder="t('intro.whats-your-name')"
@@ -48,6 +36,9 @@ const { t } = useI18n()
       </button>
     </div>
   </div>
+  <Button>
+    fsds你好
+  </Button>
 </template>
 
 <route lang="yaml">

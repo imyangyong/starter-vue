@@ -47,6 +47,7 @@ export default defineConfig({
     AutoImport({
       imports: [
         'vue',
+        'vitest',
         'vue-i18n',
         '@vueuse/head',
         '@vueuse/core',
