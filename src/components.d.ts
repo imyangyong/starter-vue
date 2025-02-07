@@ -7,11 +7,22 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Badge: typeof import('./components/ui/badge/Badge.vue')['default']
     Button: typeof import('./components/ui/button/Button.vue')['default']
     Features: typeof import('./components/Features.vue')['default']
+    Input: typeof import('./components/ui/input/Input.vue')['default']
     README: typeof import('./components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Table: typeof import('./components/ui/table/Table.vue')['default']
+    TableBody: typeof import('./components/ui/table/TableBody.vue')['default']
+    TableCaption: typeof import('./components/ui/table/TableCaption.vue')['default']
+    TableCell: typeof import('./components/ui/table/TableCell.vue')['default']
+    TableEmpty: typeof import('./components/ui/table/TableEmpty.vue')['default']
+    TableFooter: typeof import('./components/ui/table/TableFooter.vue')['default']
+    TableHead: typeof import('./components/ui/table/TableHead.vue')['default']
+    TableHeader: typeof import('./components/ui/table/TableHeader.vue')['default']
+    TableRow: typeof import('./components/ui/table/TableRow.vue')['default']
     TheCounter: typeof import('./components/TheCounter.vue')['default']
     TheFooter: typeof import('./components/TheFooter.vue')['default']
     TheInput: typeof import('./components/TheInput.vue')['default']
