@@ -62,6 +62,11 @@ const features = [
         icon: 'i-carbon-translate',
         link: 'https://vue-i18n.intlify.dev/',
       },
+      {
+        title: '不可改变数据(immer)',
+        icon: 'i-carbon-ibm-cloud-pak-manta-automated-data-lineage',
+        link: 'https://github.com/immerjs/immer',
+      },
     ],
   },
 ]
@@ -72,7 +77,7 @@ const features = [
     <TableCaption>A list of Features.</TableCaption>
     <TableHeader>
       <TableRow class="font-medium">
-        <TableHead>
+        <TableHead w-30>
           分类
         </TableHead>
         <TableHead>
@@ -82,13 +87,13 @@ const features = [
     </TableHeader>
     <TableBody>
       <TableRow v-for="feature in features" :key="feature.title">
-        <TableCell text-left>
+        <TableCell w-30 text-left>
           {{ feature.title }}
         </TableCell>
         <TableCell text-left>
           <Badge
             v-for="child in feature.children" :key="child.title"
-            mr-2
+            mb-2 mr-2
           >
             <a v-if="child.link.startsWith('http')" :href="child.link" target="_blank">
               <div :class="child.icon" inline-block items-center align-sub />
