@@ -25,6 +25,5 @@ declare module 'vue' {
     TableRow: typeof import('./components/ui/table/TableRow.vue')['default']
     TheCounter: typeof import('./components/TheCounter.vue')['default']
     TheFooter: typeof import('./components/TheFooter.vue')['default']
-    TheInput: typeof import('./components/TheInput.vue')['default']
   }
 }

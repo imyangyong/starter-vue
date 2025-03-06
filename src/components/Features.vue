@@ -69,6 +69,26 @@ const features = [
       },
     ],
   },
+  {
+    title: '动画',
+    children: [
+      {
+        title: 'animation',
+        icon: 'container-image-push-pull',
+        link: 'https://github.com/greensock/GSAP',
+      },
+    ],
+  },
+  {
+    title: '开发工具库',
+    children: [
+      {
+        title: 'DOM 元素类型推断(typed-query-selector)',
+        icon: 'i-carbon-document-signed',
+        link: 'https://github.com/g-plane/typed-query-selector',
+      },
+    ],
+  },
 ]
 </script>
 
@@ -88,7 +108,7 @@ const features = [
     <TableBody>
       <TableRow v-for="feature in features" :key="feature.title">
         <TableCell w-30 text-left>
-          {{ feature.title }}
+          {{ feature.title }} <Button>Click me</Button>
         </TableCell>
         <TableCell text-left>
           <Badge

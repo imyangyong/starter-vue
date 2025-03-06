@@ -1,5 +1,4 @@
 import type { UserModule } from './types'
-
 import { setupLayouts } from 'virtual:generated-layouts'
 import { ViteSSG } from 'vite-ssg'
 import { routes } from 'vue-router/auto-routes'
